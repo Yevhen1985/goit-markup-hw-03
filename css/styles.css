@@ -34,15 +34,21 @@ ol {
 }
 
 .list {
+
     list-style: none;
     background-color: var(--white-text);
 }
 
 .link {
     text-decoration: none;
+
+    * {
+        box-sizing: border-box;
+    }
 }
 
 .container {
+    display: inline-block;
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
@@ -58,7 +64,17 @@ img {
 .header {
     background-color: var(--white-text);
     padding: 25.5px 156px;
+}
 
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .full-logo {
@@ -69,6 +85,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--btn-blue);
+    margin-right: 76px;
 }
 
 .header-logo {
@@ -80,6 +97,7 @@ img {
     text-transform: uppercase;
     color: var(--title-color);
     text-decoration: none;
+
 }
 
 .header-link {
@@ -97,14 +115,18 @@ img {
 
 .address-list {
     font-style: normal;
+    display: flex;
+    margin-left: auto;
+    gap: 40px;
 }
 
 .header-address {
-    font-family: 'Roboto', sans-serif;
+
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
     color: var(--text-small);
+
 }
 
 .header-address:hover,
@@ -112,30 +134,44 @@ img {
     color: var(--btn-focus);
 }
 
+
 /* Main */
 /* Hero */
 .background {
     background: var(--title-color);
-    padding: 472px 188px;
+    padding: 188px 472px;
 }
 
 .hero-title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: var(--standart-letter-spacing);
     color: var(--white-text);
+    margin-bottom: 48px;
+
+
 }
 
 .hero-btn {
+    display: flex;
     background: var(--btn-blue);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     cursor: pointer;
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     color: var(--white-text);
+    width: 169px;
+    height: 56px;
+    max-width: 246px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .hero-btn:hover,
@@ -144,13 +180,20 @@ img {
 }
 
 /* We Are */
+
+.we-are {
+    justify-content: center;
+}
+
 .what-we-are {
     font-weight: 500;
     font-size: var(--we-are-size);
     line-height: 1.20;
     letter-spacing: var(--standart-letter-spacing);
     color: var(--title-color);
-    padding: 120px 156px;
+    padding-top: 120px;
+    margin-bottom: 8px;
+    column-gap: 24px;
 }
 
 .description {
@@ -158,9 +201,21 @@ img {
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
     color: var(--text-small);
+    padding-bottom: 120px;
 }
 
 /* What are we doing */
+
+.section-3 {
+    padding-bottom: 120px;
+}
+
+.list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
 .wawd {
     font-weight: 700;
     font-size: 36px;
@@ -169,17 +224,25 @@ img {
     letter-spacing: var(--standart-letter-spacing);
     text-transform: capitalize;
     color: var(--title-color);
-    padding: 120px 156px;
+    margin-bottom: 72px;
+
 }
 
 /* Our Team */
 .our-team {
     background-color: var(--light-color);
-    padding: 120px 156px;
+    padding: 120px 156px
+}
+
+.list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
 }
 
 .list-items {
     background-color: var(--white-text);
+    width: calc((100% - 48px)/3);
 }
 
 .team-title {
@@ -190,6 +253,7 @@ img {
     text-transform: capitalize;
     color: var(--title-color);
     background-color: var(--white-text);
+    margin-bottom: 72px;
 }
 
 .person-name {
@@ -197,7 +261,9 @@ img {
     font-size: var(--we-are-size);
     line-height: 1.20;
     letter-spacing: var(--standart-letter-spacing);
-    color: var(--title-color)
+    color: var(--title-color);
+    text-align: center;
+    margin: 32px 0 8px 0;
 }
 
 .person-position {
@@ -205,15 +271,18 @@ img {
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
     color: var(--text-small);
+    text-align: center;
+    margin-bottom: 32px;
 }
 
 /* Footer */
 .footer {
     background: var(--title-color);
-    padding: 101.5px 1020px 100px 156px
+    padding: 101.5px 0 100px 0
 }
 
 .footer-logo {
+    display: flex;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -224,10 +293,12 @@ img {
 }
 
 .text {
+    display: flex;
     color: var(--light-color);
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
+    margin: 17.5px 0 0 156px;
 }
 
 /**==========STUDIO==========**/
@@ -235,6 +306,12 @@ img {
 
 /**==========PORTFOLIO==========**/
 /* Buttons */
+.buttons {
+
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .portfolio-btn {
     background: var(--light-color);
     font-family: 'Roboto', sans-serif;
@@ -244,10 +321,18 @@ img {
     line-height: var(--standart-line-height);
     letter-spacing: 0.04em;
     color: var(--btn-blue);
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((100% - 48px)/3);
+    column-gap: 24px;
+    row-gap: 48px;
     background-color: var(--white-text);
+    gap: 24px;
 }
 
 .portfolio-btn:hover,
@@ -257,22 +342,27 @@ img {
 }
 
 .row-item {
+    border: 1px solid #e7e9fc;
+    width: calc((100% - 48px)/3);
+}
 
-    .pics-title {
-        font-weight: 500;
-        font-size: var(--we-are-size);
-        line-height: 1.20;
-        letter-spacing: var(--standart-letter-spacing);
-        color: var(--title-color);
-        margin-bottom: 8px;
-        text-align: center;
-    }
+.pics-title {
+    font-weight: 500;
+    font-size: var(--we-are-size);
+    line-height: 1.20;
+    letter-spacing: var(--standart-letter-spacing);
+    color: var(--title-color);
+    margin: 32px 0 8px 16px;
 
-    .pics-text {
-        font-size: var(--text-font-size);
-        line-height: var(--standart-line-height);
-        letter-spacing: var(--standart-letter-spacing);
-        color: var(--text-small);
-    }
+}
 
-    /**==========CONTACTS==========**/
+.pics-text {
+    font-size: var(--text-font-size);
+    line-height: var(--standart-line-height);
+    letter-spacing: var(--standart-letter-spacing);
+    color: var(--text-small);
+    margin: 0 0 32px 16px;
+
+}
+
+/**==========CONTACTS==========**/
