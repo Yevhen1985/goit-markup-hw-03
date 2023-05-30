@@ -5,6 +5,7 @@
     --light-color: #F4F4FD;
     --btn-blue: #4D5AE5;
     --btn-focus: #404BBF;
+    --btn-lines: #e7e9fc;
     --text-font-size: 16px;
     --standart-line-height: 1.50;
     --standart-letter-spacing: 0.02em;
@@ -48,7 +49,7 @@ ol {
 }
 
 .container {
-    display: inline-block;
+    display: flex;
     width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
@@ -64,6 +65,7 @@ img {
 .header {
     background-color: var(--white-text);
     padding: 25.5px 156px;
+    border-bottom: 1px solid var(--btn-lines)
 }
 
 .header-container {
@@ -108,14 +110,15 @@ img {
     color: var(--title-color);
 }
 
-.header-link:hover,
+.header-link:hover {}
+
 .header-link:focus {
     color: var(--btn-focus);
 }
 
 .address-list {
-    font-style: normal;
     display: flex;
+    font-style: normal;
     margin-left: auto;
     gap: 40px;
 }
@@ -139,7 +142,7 @@ img {
 /* Hero */
 .background {
     background: var(--title-color);
-    padding: 188px 472px;
+    padding: 188px 0 188px 0
 }
 
 .hero-title {
@@ -174,7 +177,9 @@ img {
 
 }
 
-.hero-btn:hover,
+.hero-btn:hover {}
+
+,
 .hero-btn:focus {
     background: var(--btn-focus);
 }
@@ -306,10 +311,31 @@ img {
 
 /**==========PORTFOLIO==========**/
 /* Buttons */
-.buttons {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-    padding-top: 96px;
-    padding-bottom: 120px;
+.portfolio-container {
+    display: flex;
+    padding: 12px 24px;
+    border: 1px solid var(--btn-lines);
+
+}
+
+.buttons-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
 }
 
 .portfolio-btn {
@@ -321,28 +347,39 @@ img {
     line-height: var(--standart-line-height);
     letter-spacing: 0.04em;
     color: var(--btn-blue);
-    gap: 24px;
-    margin-bottom: 72px;
+    border-radius: 4px;
+    border: 1px solid var(--btn-lines);
+    padding: 12px 24px;
 }
 
 .photo-list {
     display: flex;
     flex-wrap: wrap;
     width: calc((100% - 48px)/3);
+    justify-content: center;
     column-gap: 24px;
     row-gap: 48px;
     background-color: var(--white-text);
-    gap: 24px;
+
 }
 
-.portfolio-btn:hover,
+.portfolio-btn:hover {
+    border: 1px solid transparent
+}
+
 .portfolio-btn:focus {
+    border: 1px solid transparent;
     background: var(--btn-focus);
     color: var(--white-text);
 }
 
+.row-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+}
+
 .row-item {
-    border: 1px solid #e7e9fc;
     width: calc((100% - 48px)/3);
 }
 
