@@ -283,7 +283,7 @@ img {
 /* Footer */
 .footer {
     background: var(--title-color);
-    padding: 101.5px 0 100px 0
+    padding: 101.5px 0 100px 156px;
 }
 
 .footer-logo {
@@ -295,15 +295,17 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light-color);
+    display: inline-block;
+    margin-bottom: 17.5px;
 }
 
 .text {
-    display: flex;
     color: var(--light-color);
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
-    margin: 17.5px 0 0 156px;
+
+    max-width: 264px;
 }
 
 /**==========STUDIO==========**/
@@ -333,7 +335,7 @@ img {
 
 .buttons-list {
     display: flex;
-    justify-content: center;
+    align-items: center;
     gap: 24px;
     margin-bottom: 72px;
 }
