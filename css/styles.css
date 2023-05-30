@@ -187,9 +187,12 @@ img {
 
 .we-are {
     justify-content: center;
+    padding: 120px 0;
 }
 
+
 .what-we-are {
+
     font-weight: 500;
     font-size: var(--we-are-size);
     line-height: 1.20;
@@ -204,8 +207,7 @@ img {
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: var(--standart-letter-spacing);
-    color: var(--text-small);
-    padding-bottom: 120px;
+    color: var(--text-small)
 }
 
 /* What are we doing */
@@ -235,19 +237,22 @@ img {
 /* Our Team */
 .our-team {
     background-color: var(--light-color);
-    padding: 120px 156px
+    padding: 120px 0px
 }
+
+.team-container {}
 
 .list {
     display: flex;
     gap: 24px;
     justify-content: center;
+    border-radius: 0 0 4px 4px;
 }
 
 .list-items {
     background-color: var(--white-text);
     width: calc((100% - 72px)/4);
-    border-radius: 0 0 4px 4px;
+
 }
 
 .team-title {
@@ -286,8 +291,17 @@ img {
     padding: 100px 0
 }
 
-.footer-logo {
+.footer-container {
     display: flex;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 120px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -295,7 +309,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--light-color);
-    display: inline-block;
     margin-bottom: 16px;
 }
 
