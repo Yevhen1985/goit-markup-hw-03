@@ -147,10 +147,11 @@ img {
 /* Hero */
 .background {
     background: var(--title-color);
-    padding: 188px 0 188px 0
+    padding: 188px 0 188px 0;
 }
 
 .hero-title {
+    display: flex;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -159,13 +160,15 @@ img {
     text-align: center;
     letter-spacing: var(--standart-letter-spacing);
     color: var(--white-text);
+    max-width: 496px;
     margin-bottom: 48px;
-
-
+    margin: 0 auto;
 }
 
 .hero-btn {
-    display: flex;
+    display: block;
+    border: none;
+    border-radius: 4px;
     background: var(--btn-blue);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -176,9 +179,9 @@ img {
     color: var(--white-text);
     width: 169px;
     height: 56px;
+    min-width: 169px;
     max-width: 246px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 
 }
 
