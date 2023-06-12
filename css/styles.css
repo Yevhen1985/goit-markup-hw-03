@@ -102,6 +102,10 @@ img {
 
 }
 
+.menu-list {
+    gap: 40px;
+}
+
 .header-link {
     font-weight: 500;
     font-size: var(--text-font-size);
@@ -121,7 +125,7 @@ img {
     display: flex;
     font-style: normal;
     margin-left: auto;
-
+    gap: 40px;
 }
 
 .header-address {
@@ -180,7 +184,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background: var(--btn-focus);
+    background-color: var(--btn-focus);
 }
 
 /* We Are */
@@ -190,9 +194,29 @@ img {
     padding: 120px 0;
 }
 
+.we-are-list {
+    display: flex;
+    gap: 24px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.we-ar-block {
+    flex-basis: calc((100%-3*24px)/4);
+}
 
 .what-we-are {
-
     font-weight: 500;
     font-size: var(--we-are-size);
     line-height: 1.20;
@@ -216,10 +240,10 @@ img {
     padding-bottom: 120px;
 }
 
-.list {
+.wawd-list {
     display: flex;
+    align-items: center;
     gap: 24px;
-    justify-content: center;
 }
 
 .wawd {
@@ -230,8 +254,8 @@ img {
     letter-spacing: var(--standart-letter-spacing);
     text-transform: capitalize;
     color: var(--title-color);
-    margin-bottom: 72px;
-
+    margin: 0 auto;
+    margin-bottom: 72px
 }
 
 /* Our Team */
@@ -265,6 +289,8 @@ img {
     background-color: var(--white-text);
     margin-bottom: 72px;
 }
+
+.team-photo {}
 
 .person-name {
     font-weight: 500;
