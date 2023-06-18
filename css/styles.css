@@ -257,7 +257,7 @@ img {
 
 /* What are we doing */
 
-.section-3 {
+.section-wawd {
     padding-bottom: 120px;
 }
 
@@ -352,7 +352,6 @@ team-container {
 }
 
 .footer-logo {
-    display: inline-block;
     width: 120px;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
