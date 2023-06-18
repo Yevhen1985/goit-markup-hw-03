@@ -279,6 +279,10 @@ img {
     margin-bottom: 72px
 }
 
+.about-item {
+    width: calc((100% - 48) / 3);
+}
+
 /* Our Team */
 .our-team {
     background-color: var(--light-color);
@@ -416,7 +420,7 @@ team-container {
     color: var(--btn-blue);
     border-radius: 4px;
     border: 1px solid var(--btn-lines);
-
+    padding: 12px 24px
 }
 
 .photo-list {
