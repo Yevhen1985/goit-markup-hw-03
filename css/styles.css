@@ -169,7 +169,6 @@ img {
 }
 
 .hero-title {
-    display: flex;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -181,6 +180,7 @@ img {
     max-width: 496px;
     margin-bottom: 48px;
     margin: 0 auto;
+
 }
 
 .hero-btn {
@@ -192,15 +192,14 @@ img {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     cursor: pointer;
+    align-items: center;
     font-size: var(--text-font-size);
     line-height: var(--standart-line-height);
     letter-spacing: 0.02em;
     color: var(--white-text);
     height: 56px;
     min-width: 169px;
-
     margin: 0 auto;
-
 }
 
 .hero-btn:hover,
@@ -243,7 +242,6 @@ img {
     line-height: 1.20;
     letter-spacing: var(--standart-letter-spacing);
     color: var(--title-color);
-    padding-top: 120px;
     margin-bottom: 8px;
     column-gap: 24px;
 }
